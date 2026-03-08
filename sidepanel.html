@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ollama RAG Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+<div class="header">🧠 Ollama RAG Assistant</div>
+
+<div class="controls">
+<select id="model">
+<option value="llama3:latest">llama3:latest</option>
+</select>
+</div>
+
+<div class="ragbox">
+<input type="file" id="file" accept=".txt,.md">
+<button id="index">Indexar</button>
+<span id="status"></span>
+</div>
+
+<div id="chat" class="chat"></div>
+
+<div class="inputBox">
+<textarea id="prompt" placeholder="Pregunta..."></textarea>
+<button id="send">Enviar</button>
+</div>
+
+</div>
+
+<script src="sidepanel.js"></script>
+
+</body>
+</html>
